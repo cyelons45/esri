@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400,400i,700,900,900i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="resizer.js"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <title>JAPI</title>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="main_map">
+            <header class="head">
+                <h1>Esri Services</h1>
+                <!-- <div class="rightSide">
+                    <select name="" id="lstservices"></select>
+                </div> -->
+            </header>
+            <div class="map_Content">
+                <div class="attribute_Table">
+                    <div class="contents">
+                        <div class="header_t">
+                            <div class="att_content-cover">
+                                <div class="icon-1 icon" id="icon-1">Content</div>
+                                <div class="icon-2 icon" id="icon-2">About</div>
+                            </div>
+                            <div class="currentExtent">
+                                <input type="checkbox" id="useExtent" name="useExtent" checked>
+                                <label for="useExtent" title="Performs query based on the current extent of the map"> Use current Extent</label>
+                            </div>
+                        </div>
+                        <div class="attr_content">
+                            <div class="attr_board">
+                                <div class="att-table">
+                                    <div class="context-menu">
+                                        <div class="context-main">
+                                            <ul class="context_list">
+                                                <li class="context_item" id="Zoom_to_Layer">Zoom to Layer</li>
+                                                <li class="context_item" id="Attribute_table">View Attribute table</li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="att-about"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="closen"></div>
+                </div>
+                <div class="section-map">
+                    <div id="viewDiv">
+                        <div class="button-bm">
+                            <div class="container-box">
+                                <div class="container">Street</div>
+                            </div>
+                            <div class="basemap-gallery">
+                                <div class="arrow_bm"></div>
+                                <ul class="bm-select">
+                                    <li class="bm-click" id="streets">Streets</li>
+                                    <li class="bm-click" id="satellite">Satellite</li>
+                                    <li class="bm-click" id="topo">Topo</li>
+                                    <li class="bm-click" id="osm">Osm</li>
+                                    <li class="bm-click" id="national-geographic">National-geographic</li>
+                                    <li class="bm-click" id="streets-vector">Ostreets-vector</li>
+                                    <li class="bm-click" id="terrain">Terrain</li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="Attribute-table">
+                            <div class="att_toggle"></div>
+
+                            <div class="att_content">
+                                <div class="att_head">
+                                    <div class="att_head-container">
+                                        <h4 id="path"></h4>
+                                    </div>
+
+
+
+                                    <!-- <div class="att_close">&times;</div> -->
+                                </div>
+                                <div class="att_body">
+                                    <div class="body_content"></div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </body>
+</body>
+
+</html>
